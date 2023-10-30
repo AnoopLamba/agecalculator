@@ -169,3 +169,12 @@ input:focus {
 .show-age .age-digit {
   color: var(--Purple);
 }
+
+/* bottom attributes */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
