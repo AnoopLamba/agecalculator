@@ -150,9 +150,9 @@ input:focus {
   font-family: Poppins;
   font-weight: 900;
   font-style: italic;
-  font-size: 90px;
+  font-size: 80px;
   word-spacing: -7px;
-  line-height: 95px;
+  line-height: 85px;
 
   @media (max-width: 991.98px) {
     font-size: 60px;
