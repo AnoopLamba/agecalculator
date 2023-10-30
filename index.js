@@ -14,12 +14,19 @@ const dayInput = yearForm["day-input"];
 const monthInput = yearForm["month-input"];
 const yearInput = yearForm["year-input"];
 
-// // change focus from one input to next
-// if (dayInput.value.length >= 2) {
-//   monthInput.focus();
-//   if (monthInput.value.length >= 2) {
-//   }
-// }
+// change focus from one input to next
+dayInput.addEventListener("input", () => {
+  if (dayInput.value.length >= 2) {
+    console.log("yes");
+    monthInput.focus();
+  }
+});
+
+monthInput.addEventListener("input", () => {
+  if (monthInput.value.length >= 2) {
+    yearInput.focus();
+  }
+});
 
 // form validation checkup
 yearForm.addEventListener("submit", (event) => {
@@ -136,6 +143,9 @@ yearForm.addEventListener("submit", (event) => {
   document.getElementById("age-years").innerHTML = y3;
   document.getElementById("age-months").innerHTML = m3;
   document.getElementById("age-days").innerHTML = d3;
+
+  // loose focus from the year input after pressing enter and verfying the inputs
+  yearInput.blur();
 });
 
 function getDaysInMonth(year, month) {
