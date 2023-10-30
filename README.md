@@ -14,7 +14,7 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: (https://www.frontendmentor.io/solutions/ responsive-age-calculator-using-bootstrap-avxfGfYh3T)
+- Solution URL: (https://www.frontendmentor.io/solutions/responsive-age-calculator-using-bootstrap-avxfGfYh3T)
 - Live Site URL: (https://anooplamba.github.io/agecalculator/)
 
 ## My process
