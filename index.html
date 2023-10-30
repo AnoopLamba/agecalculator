@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="age-ctr d-flex align-items-center justify-content-center">
+      <div
+        class="age bg-white p-4 p-sm-5 d-flex flex-column justify-content-center align-items-center gap-2"
+      >
+        <!-- age input form -->
+        <form
+          id="year-form"
+          class="w-100 date-input d-flex flex-column align-items-start justify-content-center gap-3"
+        >
+          <div
+            class="w-100 d-flex align-items-center justify-content-center justify-content-lg-start gap-2 gap-sm-3"
+          >
+            <!-- day input -->
+            <div class="d-flex flex-column gap-1 position-relative">
+              <label id="dayLabel" for="dayinput">DAY</label>
+              <input
+                id="day-input"
+                name="day-input"
+                type="number"
+                maxlength="2"
+                placeholder="DD"
+                inputmode="numeric"
+              />
+              <span id="day-empty" class="input-error position-absolute">
+                This field is required
+              </span>
+              <span id="day-invalid" class="input-error position-absolute">
+                Must be a valid day
+              </span>
+            </div>
+
+            <!-- month input -->
+            <div class="d-flex flex-column gap-1 position-relative">
+              <label id="monthLabel" for="monthinput">MONTH</label>
+              <input
+                id="month-input"
+                name="month-input"
+                type="number"
+                placeholder="MM"
+                maxlength="2"
+                inputmode="numeric"
+              />
+              <span id="month-empty" class="input-error position-absolute">
+                This field is required
+              </span>
+              <span id="month-invalid" class="input-error position-absolute">
+                Must be a valid month
+              </span>
+            </div>
+
+            <!-- year input -->
+            <div class="d-flex flex-column gap-1 position-relative">
+              <label id="yearLabel" for="uearinput">YEAR</label>
+              <input
+                id="year-input"
+                name="year-input"
+                type="number"
+                placeholder="YYYY"
+                inputmode="numeric"
+                maxlength="4"
+              />
+              <span id="year-empty" class="input-error position-absolute">
+                This field is required
+              </span>
+              <span id="year-invalid" class="input-error position-absolute">
+                Must be a valid year
+              </span>
+            </div>
+          </div>
+
+          <!-- line and purple icon -->
+          <div
+            class="hr-line w-100 d-flex justify-content-center align-items-center"
+          >
+            <div class="line w-100 h-0"></div>
+            <button
+              type="submit"
+              class="circular rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+            >
+              <img src="./assets/images/icon-arrow.svg" alt="arrow icon" />
+            </button>
+            <div class="line w-100 h-0 d-lg-none"></div>
+          </div>
+        </form>
+
+        <!-- show age -->
+        <div class="show-age d-flex flex-column text-black">
+          <span class="show-age-ctr">
+            <span id="age-years" class="age-digit">--</span>
+            <span>years</span>
+          </span>
+          <span class="show-age-ctr">
+            <span id="age-months" class="age-digit">--</span>
+            <span>months</span>
+          </span>
+          <span class="show-age-ctr">
+            <span id="age-days" class="age-digit">--</span>
+            <span>days</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custom js -->
+    <script src="index.js"></script>
+  </body>
+</html>

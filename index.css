@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,800&display=swap");
+
+:root {
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* remove input number arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* age-ctr */
+.age-ctr {
+  background: var(--Off-white);
+  min-height: 100vh;
+
+  @media (max-width: 1199.98px) {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+.age-ctr .age {
+  width: 700px;
+}
+.age-ctr .age {
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 150px;
+}
+label {
+  color: var(--Smokey-grey);
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 2px;
+
+  @media (max-width: 575.98px) {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+}
+input {
+  width: 110px;
+  font-size: 22px;
+  font-weight: 800;
+  color: black;
+  padding: 6px 12px;
+  line-height: 22px;
+  border: none;
+  border: 1px solid var(--Light-grey);
+  border-radius: 4px;
+  letter-spacing: 2px;
+  caret-color: var(--Purple);
+
+  @media (max-width: 575.98px) {
+    font-size: 18px;
+    width: 80px;
+    padding: 4px 10px;
+  }
+}
+input::placeholder {
+  color: var(--Light-grey);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+input:focus {
+  outline: none;
+  border: 1px solid var(--Purple);
+}
+#year-form .input-error {
+  font-family: Poppins;
+  font-size: 9px;
+  font-weight: 400;
+  color: var(--Light-red);
+  font-style: italic;
+  bottom: -16px;
+}
+#year-form #day-empty,
+#year-form #day-invalid,
+#year-form #month-empty,
+#year-form #month-invalid,
+#year-form #year-empty,
+#year-form #year-invalid {
+  display: none;
+}
+
+/* horizontal line */
+.hr-line .line {
+  border-top: 2px solid var(--Light-grey);
+}
+.hr-line .circular {
+  width: 100px;
+  height: 100px;
+  background-color: var(--Purple);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  border: none;
+
+  @media (max-width: 991.98px) {
+    width: 70px;
+    height: 70px;
+  }
+  @media (max-width: 575.98px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+.hr-line .circular:hover {
+  background-color: var(--Off-black);
+}
+.hr-line .circular img {
+  max-width: 50px;
+  width: 100%;
+  object-fit: cover;
+
+  @media (max-width: 991.98px) {
+    max-width: 40px;
+  }
+  @media (max-width: 575.98px) {
+    max-width: 20px;
+  }
+}
+
+/* show age */
+.show-age {
+  font-family: Poppins;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 80px;
+  word-spacing: -7px;
+  line-height: 85px;
+
+  @media (max-width: 991.98px) {
+    font-size: 70px;
+    line-height: 75px;
+  }
+  @media (max-width: 575.98px) {
+    font-size: 40px;
+    line-height: 43px;
+  }
+}
+.show-age .show-age-ctr {
+  letter-spacing: -3px;
+}
+.show-age .age-digit {
+  color: var(--Purple);
+}
