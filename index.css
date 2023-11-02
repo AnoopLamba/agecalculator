@@ -55,12 +55,19 @@ label {
   letter-spacing: 3px;
 
   @media (max-width: 575.98px) {
-    font-size: 9px;
-    letter-spacing: 1px;
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+  @media (max-width: 410px) {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  @media (max-width: 370px) {
+    font-size: 8px;
   }
 }
 input {
-  width: 120px;
+  width: 140px;
   font-size: 26px;
   font-weight: 800;
   color: black;
@@ -72,14 +79,18 @@ input {
   letter-spacing: 2px;
   caret-color: var(--Purple);
 
-  @media (max-width: 991.98px) {
-    font-size: 21px;
-  }
-
   @media (max-width: 575.98px) {
-    font-size: 18px;
+    font-size: 22px;
+    width: 90px;
+  }
+  @media (max-width: 410px) {
+    font-size: 20px;
     width: 80px;
     padding: 4px 10px;
+  }
+  @media (max-width: 370px) {
+    font-size: 18px;
+    width: 100%;
   }
 }
 input::placeholder {
@@ -98,6 +109,23 @@ input:focus {
   color: var(--Light-red);
   font-style: italic;
   bottom: -16px;
+
+  @media (max-width: 575.98px) {
+    font-size: 8px;
+    bottom: -15px;
+  }
+  @media (max-width: 575.98px) {
+    font-size: 7px;
+    bottom: -12px;
+  }
+  @media (max-width: 350px) {
+    font-size: 6px;
+    text-align: center;
+    bottom: -12px;
+  }
+  @media (max-width: 320px) {
+    bottom: -19px;
+  }
 }
 #year-form #day-empty,
 #year-form #day-invalid,
@@ -120,13 +148,13 @@ input:focus {
   transition: all 200ms ease-in-out;
   border: none;
 
-  @media (max-width: 991.98px) {
-    width: 70px;
-    height: 70px;
-  }
   @media (max-width: 575.98px) {
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
+  }
+  @media (max-width: 370px) {
+    width: 65px;
+    height: 65px;
   }
 }
 .hr-line .circular:hover {
@@ -137,11 +165,11 @@ input:focus {
   width: 100%;
   object-fit: cover;
 
-  @media (max-width: 991.98px) {
+  @media (max-width: 575.98px) {
     max-width: 40px;
   }
-  @media (max-width: 575.98px) {
-    max-width: 20px;
+  @media (max-width: 370px) {
+    max-width: 30px;
   }
 }
 
@@ -154,13 +182,13 @@ input:focus {
   word-spacing: -7px;
   line-height: 85px;
 
-  @media (max-width: 991.98px) {
-    font-size: 60px;
-    line-height: 65px;
-  }
   @media (max-width: 575.98px) {
+    font-size: 50px;
+    line-height: 55px;
+  }
+  @media (max-width: 370px) {
     font-size: 40px;
-    line-height: 43px;
+    line-height: 45px;
   }
 }
 .show-age .show-age-ctr {
